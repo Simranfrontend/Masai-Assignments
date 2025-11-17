@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Product Showcase Card</title>
+<style>
+  :root{
+    --card-w: 500px;
+    --card-h: 600px;
+    --accent: #2874f0;
+    --green: #16a34a;
+    --muted: #7a7a7a;
+  }
+
+  body{
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#fafafa;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+  }
+
+  
+  .product-card{
+    width: var(--card-w);
+    height: var(--card-h);
+    padding: 30px;
+    margin: 10px;
+    border: 3px solid grey;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;   
+    justify-content: flex-start;
+  }
+
+  .img-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    width: 100%;
+    flex: 0 0 auto; 
+  }
+
+  .product-img{
+    width: 260px;
+    height: 300px;
+    justify-items: center;             
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+
+  .fav {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.05);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:16px;
+    color:#999;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+    text-align: left;
+    padding: 8px 4px 0 4px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #111;
+    margin: 0;
+  }
+
+  .sub {
+    color: #8a8a8a;
+    margin: 4px 0 0 0;
+    font-size: 13px;
+  }
+
+  .meta-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:10px;
+  }
+
+  .rating {
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:#16a34a;
+    color:#fff;
+    padding:6px 8px;
+    border-radius:6px;
+    font-weight:700;
+    font-size:14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  }
+
+  .rating small { font-weight:600; font-size:12px; opacity:0.95; }
+
+  .assured-logo {
+    width: 70px;
+    height: auto;
+    margin-left: 6px;
+  }
+
+  .price-row{
+    display:flex;
+    align-items:flex-end;
+    gap:12px;
+    margin-top:14px;
+    flex-wrap:wrap;
+  }
+
+  .current-price{
+    font-size:26px;
+    font-weight:800;
+    color:#111;
+  }
+
+  .old-price{
+    font-size:14px;
+    color:var(--muted);
+    text-decoration: line-through;
+    opacity:0.9;
+  }
+
+  .discount{
+    font-weight:700;
+    color: #15803d;
+    font-size:16px;
+    margin-left:auto;
+  }
+
+  .offer {
+    color: #15803d;
+    margin-top: 10px;
+    font-weight:700;
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="product-card">
+
+    <div class="img-wrap">
+      <img class="product-img"
+        src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/w/x/h/-original-imahfa7xspmxemvj.jpeg"
+        alt="Samsung Watch">
+      <div class="fav">♡</div>
+    </div>
+
+    <div class="details">
+
+      <h3 class="title">SAMSUNG Galaxy Watch6 LTE</h3>
+      <p class="sub">Graphite Strap, 44mm</p>
+
+      <div class="meta-row">
+        <div class="rating">4.3 ★ <small>(973)</small></div>
+        <img class="assured-logo"
+             src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png"
+             alt="Assured">
+      </div>
+
+      <div class="price-row">
+        <div>
+          <div class="current-price">₹18,999</div>
+          <div class="old-price">₹41,999</div>
+        </div>
+
+        <div class="discount">54% off</div>
+      </div>
+
+      <div class="offer">Bank Offer</div>
+
+      <div class="spacer"></div>
+
+      
+
+    </div>
+  </div>
+
+</body>
+</html>
+
