@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 150px);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .b1 { background: #00CFFF; }  /* 1 */
+        .b2 { background: #FF4500; }  /* 2 */
+        .b3 { background: #3F6BFF; }  /* 3 */
+        .b4 { background: #FFD400; }  /* 4 */
+        .b5 { background: #9A27FF; }  /* 5 */
+        .b6 { background: #3BCB45; }  /* 6 */
+        .b7 { background: #FF8B6A; }  /* 7 */
+        .b8 { background: #18B4B4; }  /* 8 */
+        .b9 { background: #6D0000; }  /* 9 */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box b2">2.</div>
+        <div class="box b3">3.</div>
+        <div class="box b4">4.</div>
+
+        <div class="box b5">5.</div>
+        <div class="box b6">6.</div>
+        <div class="box b1">1.</div>
+
+        <div class="box b7">7.</div>
+        <div class="box b8">8.</div>
+        <div class="box b9">9.</div>
+    </div>
+
+</body>
+</html>
